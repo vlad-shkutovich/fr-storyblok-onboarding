@@ -3,14 +3,17 @@
   "version": "0.1.0",
   "private": true,
   "scripts": {
-    "dev": "next dev -H 127.0.0.1 -p 3000",
+    "dev": "next dev -H 127.0.0.1 -p 3000 --experimental-https",
     "build": "next build",
     "start": "next start",
-    "lint": "eslint"
+    "lint": "eslint",
+    "format": "prettier --write ."
   },
   "dependencies": {
+    "@storyblok/js": "^4.4.2",
     "@storyblok/react": "^5.4.19",
     "next": "16.0.6",
+    "prettier-plugin-tailwindcss": "^0.7.1",
     "react": "19.2.0",
     "react-dom": "19.2.0"
   },
