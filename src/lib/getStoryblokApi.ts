@@ -17,4 +17,5 @@ export const getStoryblokApi = storyblokInit({
     grid: Grid,
     teaser: Teaser,
   },
+  bridge: true,
 })
