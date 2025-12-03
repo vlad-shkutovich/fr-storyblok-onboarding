@@ -12,9 +12,11 @@
     "sb:types": "storyblok types generate --space $SB_SPACE_ID"
   },
   "dependencies": {
+    "@radix-ui/react-slot": "^1.2.4",
     "@storyblok/react": "^5.4.19",
     "class-variance-authority": "^0.7.1",
     "clsx": "^2.1.1",
+    "embla-carousel-react": "^8.6.0",
     "lucide-react": "^0.555.0",
     "next": "16.0.6",
     "prettier-plugin-tailwindcss": "^0.7.1",
