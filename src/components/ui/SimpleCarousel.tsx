@@ -40,7 +40,7 @@ export function SimpleCarousel({
             <button
               key={i}
               onClick={() => emblaApi?.scrollTo(i)}
-              className={`h-2 w-2 rounded-full transition-all ${
+              className={`h-2 w-2 cursor-pointer rounded-full transition-all ${
                 selectedIndex === i ? 'bg-white' : 'bg-white/30'
               }`}
             />

@@ -13,7 +13,7 @@ export default function CarouselSection({ blok }: CarouselSectionProps) {
       {...storyblokEditable(blok as SbBlokData)}
     >
       <div className="flex w-full max-w-330 flex-col justify-between gap-10 2xl:flex-row">
-        <div className="flex flex-col justify-between gap-6 md:flex-row lg:gap-8 2xl:flex-col">
+        <div className="flex flex-col gap-6 md:flex-row md:justify-between lg:gap-8 2xl:flex-col 2xl:justify-start">
           {blok.text_blocks.map((nestedBlok) => (
             <StoryblokServerComponent blok={nestedBlok} key={nestedBlok._uid} />
           ))}

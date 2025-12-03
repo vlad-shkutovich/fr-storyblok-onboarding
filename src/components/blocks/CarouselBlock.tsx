@@ -11,7 +11,7 @@ interface CarouselProps {
 
 export default function CarouselBlock({ blok }: CarouselProps) {
   return (
-    <article className="w-full max-w-4xl" {...storyblokEditable(blok as SbBlokData)}>
+    <article className="w-full 2xl:max-w-4xl" {...storyblokEditable(blok as SbBlokData)}>
       <SimpleCarousel
         slidesCount={blok.carousel_items.length}
         actionButton={
