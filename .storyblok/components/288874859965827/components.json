@@ -1,10 +1,235 @@
 [
   {
+    "name": "carousel",
+    "display_name": null,
+    "description": "",
+    "created_at": "2025-12-03T09:41:19.941Z",
+    "updated_at": "2025-12-03T12:02:22.731Z",
+    "id": 119051386642744,
+    "schema": {
+      "carousel_items": {
+        "type": "bloks",
+        "pos": 1,
+        "minimum": 1,
+        "maximum": 5,
+        "id": "hp0bS9PZRKib9suVYPEqfg",
+        "restrict_type": "",
+        "restrict_components": true,
+        "component_whitelist": [
+          "carousel_item"
+        ],
+        "required": true
+      },
+      "cta_link": {
+        "type": "multilink",
+        "pos": 2,
+        "id": "bHz0zUzcTWCmberRTcaL9Q",
+        "required": true
+      },
+      "cta_label": {
+        "type": "text",
+        "pos": 2,
+        "required": true,
+        "id": "-8EmF9A1QIySB7-8lREzsg"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "carousel",
+    "component_group_uuid": null,
+    "color": "var(--sb-color-accent-background-lumber)",
+    "icon": null,
+    "internal_tags_list": [
+      {
+        "id": 119051383180996,
+        "name": "carousel"
+      },
+      {
+        "id": 119074461331153,
+        "name": "nextjs-ready"
+      }
+    ],
+    "internal_tag_ids": [
+      "119051383180996",
+      "119074461331153"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "carousel_item",
+    "display_name": null,
+    "description": "",
+    "created_at": "2025-12-03T09:43:45.307Z",
+    "updated_at": "2025-12-03T10:13:44.896Z",
+    "id": 119051982070100,
+    "schema": {
+      "quote": {
+        "type": "text",
+        "pos": 0,
+        "required": true,
+        "id": "c8Mv9ZQdTLm-HaYHVHhr5Q"
+      },
+      "category": {
+        "type": "text",
+        "pos": 1,
+        "required": true,
+        "id": "c_-ZzOJySr-EwP1ennBm7w"
+      },
+      "footer_text": {
+        "type": "text",
+        "pos": 2,
+        "required": true,
+        "id": "3jMwMnayQ6KHB9l6eBUKhw"
+      },
+      "cta_link": {
+        "type": "multilink",
+        "pos": 3,
+        "id": "B6JqjmzRQsi1IV2tpSUFVg"
+      },
+      "cta_label": {
+        "type": "text",
+        "pos": 4,
+        "required": true,
+        "id": "zHtcnju1Qxu5nNf-Cn_N7Q"
+      },
+      "right_image_background": {
+        "type": "asset",
+        "pos": 5,
+        "required": false,
+        "filetypes": [
+          "images"
+        ],
+        "id": "BQs8LFPWQFmksCoJqcUz1g"
+      },
+      "right_image": {
+        "type": "asset",
+        "pos": 6,
+        "required": false,
+        "filetypes": [
+          "images"
+        ],
+        "id": "MbAI763MQOmnCh4wYgR3EA"
+      },
+      "person_avatar": {
+        "type": "asset",
+        "pos": 7,
+        "required": false,
+        "filetypes": [
+          "images"
+        ],
+        "id": "mnwmt1vpTXaDqdUyBSbbpQ"
+      },
+      "person_name": {
+        "type": "text",
+        "pos": 8,
+        "required": true,
+        "id": "W0bFTahnSGeEvqfkjnO7qA"
+      },
+      "person_role": {
+        "type": "text",
+        "pos": 9,
+        "required": true,
+        "id": "wlAtizGFTJe527z6cZCBJw"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "carousel_item",
+    "component_group_uuid": null,
+    "color": "var(--sb-color-accent-background-lumber)",
+    "icon": null,
+    "internal_tags_list": [
+      {
+        "id": 119051383180996,
+        "name": "carousel"
+      }
+    ],
+    "internal_tag_ids": [
+      "119051383180996"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "carousel_section",
+    "display_name": null,
+    "description": "Section with text blocks and caorusel",
+    "created_at": "2025-12-03T09:33:23.455Z",
+    "updated_at": "2025-12-03T11:58:07.936Z",
+    "id": 119049434960167,
+    "schema": {
+      "text_blocks": {
+        "type": "bloks",
+        "pos": 0,
+        "required": true,
+        "id": "VGspfi-mQ5efFUiUF0TbeQ",
+        "restrict_type": "",
+        "restrict_components": true,
+        "component_whitelist": [
+          "text_block"
+        ],
+        "minimum": 1,
+        "maximum": 3
+      },
+      "carousel": {
+        "type": "bloks",
+        "pos": 1,
+        "id": "KbqbT5mvRmyDUIBYj9gWGQ",
+        "restrict_type": "",
+        "restrict_components": true,
+        "component_whitelist": [
+          "carousel"
+        ],
+        "required": true,
+        "minimum": 1,
+        "maximum": 1
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "carousel_section",
+    "component_group_uuid": null,
+    "color": "var(--sb-color-accent-background-water)",
+    "icon": null,
+    "internal_tags_list": [
+      {
+        "id": 119056948088519,
+        "name": "section"
+      },
+      {
+        "id": 119074461331153,
+        "name": "nextjs-ready"
+      }
+    ],
+    "internal_tag_ids": [
+      "119056948088519",
+      "119074461331153"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "home_page",
     "display_name": "Home Page",
     "description": "Home page layout",
     "created_at": "2025-12-01T13:23:13.981Z",
-    "updated_at": "2025-12-03T07:59:37.538Z",
+    "updated_at": "2025-12-03T11:15:40.721Z",
     "id": 118398132157934,
     "schema": {
       "body": {
@@ -13,7 +238,8 @@
         "restrict_type": "",
         "restrict_components": true,
         "component_whitelist": [
-          "text_cards_section"
+          "text_cards_section",
+          "carousel_section"
         ]
       }
     },
@@ -26,10 +252,71 @@
     "preset_id": null,
     "real_name": "Home Page",
     "component_group_uuid": null,
-    "color": null,
+    "color": "var(--sb-color-accent-background-lavender)",
     "icon": null,
-    "internal_tags_list": [],
-    "internal_tag_ids": [],
+    "internal_tags_list": [
+      {
+        "id": 119053497487045,
+        "name": "page"
+      },
+      {
+        "id": 119074461331153,
+        "name": "nextjs-ready"
+      }
+    ],
+    "internal_tag_ids": [
+      "119053497487045",
+      "119074461331153"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "text_block",
+    "display_name": null,
+    "description": "Text with heading and description",
+    "created_at": "2025-12-03T09:36:59.473Z",
+    "updated_at": "2025-12-03T11:46:18.086Z",
+    "id": 119050319773999,
+    "schema": {
+      "headline": {
+        "type": "text",
+        "pos": 0,
+        "required": true,
+        "id": "k9vXkWdlQ1akdpBgomYlAg"
+      },
+      "description": {
+        "type": "text",
+        "pos": 1,
+        "required": true,
+        "id": "mDEgtF_tQ7mVKTdLSyYPNw"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "text_block",
+    "component_group_uuid": null,
+    "color": "var(--sb-color-accent-background-pale-lavender)",
+    "icon": null,
+    "internal_tags_list": [
+      {
+        "id": 119050314518211,
+        "name": "shared"
+      },
+      {
+        "id": 119074461331153,
+        "name": "nextjs-ready"
+      }
+    ],
+    "internal_tag_ids": [
+      "119050314518211",
+      "119074461331153"
+    ],
     "content_type_asset_preview": null,
     "metadata": {}
   },
@@ -38,7 +325,7 @@
     "display_name": null,
     "description": "Text Card",
     "created_at": "2025-12-02T13:40:20.509Z",
-    "updated_at": "2025-12-02T15:38:04.114Z",
+    "updated_at": "2025-12-03T11:15:31.518Z",
     "id": 118756231209846,
     "schema": {
       "icon": {
@@ -72,10 +359,22 @@
     "preset_id": null,
     "real_name": "text_card",
     "component_group_uuid": null,
-    "color": null,
+    "color": "var(--sb-color-accent-background-pale-lavender)",
     "icon": null,
-    "internal_tags_list": [],
-    "internal_tag_ids": [],
+    "internal_tags_list": [
+      {
+        "id": 119050314518211,
+        "name": "shared"
+      },
+      {
+        "id": 119074461331153,
+        "name": "nextjs-ready"
+      }
+    ],
+    "internal_tag_ids": [
+      "119050314518211",
+      "119074461331153"
+    ],
     "content_type_asset_preview": null,
     "metadata": {}
   },
@@ -84,7 +383,7 @@
     "display_name": "",
     "description": "Mini section with simple text cards",
     "created_at": "2025-12-02T13:36:58.539Z",
-    "updated_at": "2025-12-02T15:38:09.306Z",
+    "updated_at": "2025-12-03T11:15:51.690Z",
     "id": 118755403944782,
     "schema": {
       "cards": {
@@ -111,10 +410,22 @@
     "preset_id": null,
     "real_name": "text_cards_section",
     "component_group_uuid": null,
-    "color": null,
+    "color": "var(--sb-color-accent-background-water)",
     "icon": null,
-    "internal_tags_list": [],
-    "internal_tag_ids": [],
+    "internal_tags_list": [
+      {
+        "id": 119056948088519,
+        "name": "section"
+      },
+      {
+        "id": 119074461331153,
+        "name": "nextjs-ready"
+      }
+    ],
+    "internal_tag_ids": [
+      "119056948088519",
+      "119074461331153"
+    ],
     "content_type_asset_preview": null,
     "metadata": {}
   }

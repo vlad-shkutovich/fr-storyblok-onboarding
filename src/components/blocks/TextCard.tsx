@@ -9,9 +9,9 @@ interface TextCardProps {
 
 export default function TextCard({ blok }: TextCardProps) {
   return (
-    <div className="flex flex-col gap-2 text-[#09151C]" {...storyblokEditable(blok as SbBlokData)}>
+    <div className="flex flex-col gap-2" {...storyblokEditable(blok as SbBlokData)}>
       <div className="flex items-center gap-3">
-        <div className="rounded-full bg-[#D3EBEA] p-1">
+        <div className="rounded-full bg-[#D3EBEA] p-1 dark:bg-[#25d4ce]">
           <Image
             width={12}
             height={9}

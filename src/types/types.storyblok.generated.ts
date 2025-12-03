@@ -1,5 +1,9 @@
 export type {
   HomePage as HomePageType,
   TextCard as TextCardType,
+  TextBlock as TextBlockType,
   TextCardsSection as TextCardsSectionType,
+  CarouselSection as CarouselSectionType,
+  Carousel as CarouselType,
+  CarouselItem as CarouselItemType,
 } from '../../.storyblok/types/288874859965827/storyblok-components'
