@@ -1,8 +1,8 @@
 import { type ReactNode } from 'react'
 
-import { getStoryblokApi } from '@/lib/getStoryblokApi'
+import { setupStoryblokApi } from '@/config/config.storyblok-api'
 
 export default function StoryblokProvider({ children }: { children: ReactNode }) {
-  getStoryblokApi()
+  setupStoryblokApi()
   return children
 }

@@ -1,4 +1,4 @@
-import { getStoryblokApi } from '@/lib/getStoryblokApi'
+import { setupStoryblokApi } from '@/config/config.storyblok-api'
 import { StoryblokStory } from '@storyblok/react/rsc'
 
 export default async function Page({ params }: any) {
@@ -6,7 +6,7 @@ export default async function Page({ params }: any) {
 
   const fullSlug = slug ? slug.join('/') : 'home'
 
-  const storyblokApi = getStoryblokApi()
+  const storyblokApi = setupStoryblokApi()
   const { data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, {
     version: 'draft',
   })

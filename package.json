@@ -7,7 +7,9 @@
     "build": "next build",
     "start": "next start",
     "lint": "eslint",
-    "format": "prettier --write ."
+    "format": "prettier --write .",
+    "sb:pull": "storyblok components pull --space $SB_SPACE_ID",
+    "sb:types": "storyblok types generate --space $SB_SPACE_ID"
   },
   "dependencies": {
     "@storyblok/react": "^5.4.19",

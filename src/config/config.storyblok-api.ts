@@ -1,19 +1,24 @@
 import { apiPlugin, storyblokInit } from '@storyblok/react/rsc'
 
-import Page from '@/components/Page'
+import HomePage from '@/components/HomePage'
 import TextCard from '@/components/TextCard'
 import TextCardsSection from '@/components/TextCardsSection'
 
-export const getStoryblokApi = storyblokInit({
+const pages = {
+  home_page: HomePage,
+}
+
+const blocks = {
+  text_card: TextCard,
+  text_cards_section: TextCardsSection,
+}
+
+export const setupStoryblokApi = storyblokInit({
   accessToken: process.env.NEXT_PUBLIC_STORYBLOK_CONTENT_API_ACCESS_TOKEN,
   use: [apiPlugin],
   apiOptions: {
     region: 'eu',
   },
-  components: {
-    text_card: TextCard,
-    text_cards_section: TextCardsSection,
-    page: Page,
-  },
+  components: { ...pages, ...blocks },
   bridge: true,
 })
