@@ -44,7 +44,7 @@ export default function CarouselItemBlock({ blok }: CarouselItemProps) {
         />
 
         <div className="relative z-10 flex h-full w-full flex-col items-center px-4">
-          <div className="flex flex-1 items-center">
+          <div className="flex flex-1 items-center py-18 md:py-0">
             <Image
               src={blok.right_image?.filename ?? ''}
               alt={blok.right_image?.alt ?? ''}
@@ -53,7 +53,7 @@ export default function CarouselItemBlock({ blok }: CarouselItemProps) {
             />
           </div>
 
-          <div className="border-foreground flex w-full gap-3 border-t-2 py-4">
+          <div className="border-secondary flex w-full gap-3 border-t-2 py-4">
             <Image
               src={blok.person_avatar?.filename ?? ''}
               alt={blok.person_avatar?.alt ?? ''}
