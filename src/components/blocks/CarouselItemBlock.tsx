@@ -38,18 +38,20 @@ export default function CarouselItemBlock({ blok }: CarouselItemProps) {
           src={blok.right_image_background?.filename ?? ''}
           alt={blok.right_image_background?.alt ?? ''}
           fill
+          sizes="100%"
           loading="eager"
           className="rounded-t-lg md:rounded-t-none md:rounded-r-lg"
         />
 
         <div className="relative z-10 flex h-full w-full flex-col items-center px-4">
-          <Image
-            src={blok.right_image?.filename ?? ''}
-            alt={blok.right_image?.alt ?? ''}
-            width={120}
-            height={120}
-            className="flex-1 self-center object-contain py-16"
-          />
+          <div className="flex flex-1 items-center">
+            <Image
+              src={blok.right_image?.filename ?? ''}
+              alt={blok.right_image?.alt ?? ''}
+              width={120}
+              height={120}
+            />
+          </div>
 
           <div className="border-foreground flex w-full gap-3 border-t-2 py-4">
             <Image
