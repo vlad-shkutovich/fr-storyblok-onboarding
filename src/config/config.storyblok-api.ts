@@ -1,22 +1,22 @@
 import { apiPlugin, storyblokInit } from '@storyblok/react/rsc'
 
-import Carousel from '@/components/blocks/Carousel'
+import CarouselBlock from '@/components/blocks/CarouselBlock'
 import TextBlock from '@/components/blocks/TextBlock'
-import TextCard from '@/components/blocks/TextCard'
+import TextCardBlock from '@/components/blocks/TextCardBlock'
 import HomePage from '@/components/pages/HomePage'
 import CarouselSection from '@/components/sections/CarouselSection'
 import TextCardsSection from '@/components/sections/TextCardsSection'
-import CarouselItem from '@/components/blocks/CarouselItem'
+import CarouselItemBlock from '@/components/blocks/CarouselItemBlock'
 
 const pages = {
   home_page: HomePage,
 }
 
 const blocks = {
-  text_card: TextCard,
+  text_card: TextCardBlock,
   text_block: TextBlock,
-  carousel: Carousel,
-  carousel_item: CarouselItem,
+  carousel: CarouselBlock,
+  carousel_item: CarouselItemBlock,
 }
 
 const sections = {

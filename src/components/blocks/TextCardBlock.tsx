@@ -7,7 +7,7 @@ interface TextCardProps {
   blok: TextCardType
 }
 
-export default function TextCard({ blok }: TextCardProps) {
+export default function TextCardBlock({ blok }: TextCardProps) {
   return (
     <div className="flex flex-col gap-2" {...storyblokEditable(blok as SbBlokData)}>
       <div className="flex items-center gap-3">

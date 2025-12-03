@@ -6,6 +6,6 @@ interface CarouselItemProps {
   blok: CarouselItemType
 }
 
-export default function CarouselItem({ blok }: CarouselItemProps) {
+export default function CarouselItemBlock({ blok }: CarouselItemProps) {
   return <div {...storyblokEditable(blok as SbBlokData)}>{blok.quote}</div>
 }

@@ -6,7 +6,7 @@ interface CarouselProps {
   blok: CarouselType
 }
 
-export default function Carousel({ blok }: CarouselProps) {
+export default function CarouselBlock({ blok }: CarouselProps) {
   return (
     <article {...storyblokEditable(blok as SbBlokData)}>
       <div>
