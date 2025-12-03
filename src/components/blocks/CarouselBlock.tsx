@@ -15,7 +15,7 @@ export default function CarouselBlock({ blok }: CarouselProps) {
         ))}
       </div>
 
-      <a href={blok.cta_link.target}>{blok.cta_label}</a>
+      <a href={blok.cta_link.url}>{blok.cta_label}</a>
     </article>
   )
 }

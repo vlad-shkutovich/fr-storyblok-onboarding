@@ -7,9 +7,9 @@ interface TextBlockProps {
 
 export default function TextBlock({ blok }: TextBlockProps) {
   return (
-    <div {...storyblokEditable(blok as SbBlokData)}>
-      {blok.headline}
-      {blok.description}
+    <div className="space-y-0.5" {...storyblokEditable(blok as SbBlokData)}>
+      <h4 className="text-4xl leading-12 md:text-[40px]">{blok.headline}</h4>
+      <p className="text-sm">{blok.description}</p>
     </div>
   )
 }
