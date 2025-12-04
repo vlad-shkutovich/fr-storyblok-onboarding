@@ -1,7 +1,7 @@
 import { setupStoryblokApi } from '@/config/config.storyblok-api'
 import { StoryblokStory } from '@storyblok/react/rsc'
 
-export default async function Page({ params }: any) {
+export default async function Page({ params }: PageProps<'/[[...slug]]'>) {
   const { slug } = await params
 
   const fullSlug = slug ? slug.join('/') : 'home'
