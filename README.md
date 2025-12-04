@@ -1,36 +1,35 @@
-This is a [Next.js](https://nextjs.org) project bootstrapped with [`create-next-app`](https://nextjs.org/docs/app/api-reference/cli/create-next-app).
+# xWeather onboarding tracker
 
-## Getting Started
+### 📅 Monday, 01.12.2025
 
-First, run the development server:
+- Setup new Storyblok + Next.js project from scratch;
+- Explore links from Eugene;
 
-```bash
-npm run dev
-# or
-yarn dev
-# or
-pnpm dev
-# or
-bun dev
-```
+### 📅 Tuesday, 02.12.2025
 
-Open [http://localhost:3000](http://localhost:3000) with your browser to see the result.
+- Predefine some dumb components to check connection;
+- Fix "http:// is not allowed" error;
+- Explore links from Eugene;
+- Configure universal page for handling all Storyblok components;
+- Configure Visual Editor Bridge (for live-reload and blocks highlight);
+- Working with Storyblok for **mini-section**;
+- Working with Next.js for **mini-section**;
 
-You can start editing the page by modifying `app/page.tsx`. The page auto-updates as you edit the file.
+![Mini-section desktop](./readme_images/image-4.png) ![Mini-section mobile](./readme_images/image-5.png)
 
-This project uses [`next/font`](https://nextjs.org/docs/app/building-your-application/optimizing/fonts) to automatically optimize and load [Geist](https://vercel.com/font), a new font family for Vercel.
+### 📅 Wednesday, 03.12.2025
 
-## Learn More
+- Configure Storyblok CLI to fetch types and use them in code;
+- Deploy project to Vercel (+configure new account);
+- Configure Shadcn;
+- Working with Storyblok for **slider section**;
+- Working with Next.js for **slider section**;
 
-To learn more about Next.js, take a look at the following resources:
+![Slider desktop](./readme_images/image.png)
+![Slider mobile](./readme_images/image-3.png) ![Slider tablet](./readme_images/image-1.png)
 
-- [Next.js Documentation](https://nextjs.org/docs) - learn about Next.js features and API.
-- [Learn Next.js](https://nextjs.org/learn) - an interactive Next.js tutorial.
+![Storyblok blocks library](./readme_images/image-6.png)
 
-You can check out [the Next.js GitHub repository](https://github.com/vercel/next.js) - your feedback and contributions are welcome!
+### 📅 Thursday, 04.12.2025
 
-## Deploy on Vercel
-
-The easiest way to deploy your Next.js app is to use the [Vercel Platform](https://vercel.com/new?utm_medium=default-template&filter=next.js&utm_source=create-next-app&utm_campaign=create-next-app-readme) from the creators of Next.js.
-
-Check out our [Next.js deployment documentation](https://nextjs.org/docs/app/building-your-application/deploying) for more details.
+- Self code-review and minor improvements;
