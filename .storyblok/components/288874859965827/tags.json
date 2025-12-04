@@ -1,0 +1,27 @@
+[
+  {
+    "name": "shared",
+    "id": 119050314518211,
+    "object_type": "component"
+  },
+  {
+    "name": "carousel",
+    "id": 119051383180996,
+    "object_type": "component"
+  },
+  {
+    "name": "page",
+    "id": 119053497487045,
+    "object_type": "component"
+  },
+  {
+    "name": "section",
+    "id": 119056948088519,
+    "object_type": "component"
+  },
+  {
+    "name": "nextjs-ready",
+    "id": 119074461331153,
+    "object_type": "component"
+  }
+]
