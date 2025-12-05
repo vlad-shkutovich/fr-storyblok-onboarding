@@ -6,4 +6,7 @@ export type {
   CarouselSection as CarouselSectionType,
   Carousel as CarouselType,
   CarouselItem as CarouselItemType,
+  CaterogyItem as CaterogyItemType,
+  BlogItem as BlogItemType,
+  BlogSection as BlogSectionType,
 } from '../../.storyblok/types/288874859965827/storyblok-components'

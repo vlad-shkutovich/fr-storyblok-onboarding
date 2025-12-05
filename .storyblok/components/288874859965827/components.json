@@ -1,5 +1,165 @@
 [
   {
+    "name": "blog_item",
+    "display_name": null,
+    "description": "Blog story",
+    "created_at": "2025-12-05T09:28:33.452Z",
+    "updated_at": "2025-12-05T09:50:32.860Z",
+    "id": 119756035905865,
+    "schema": {
+      "title": {
+        "type": "text",
+        "pos": 0,
+        "required": true,
+        "id": "7qI0BfInQDeOhwuY_pEHiw"
+      },
+      "category": {
+        "type": "option",
+        "pos": 1,
+        "use_uuid": true,
+        "options": [
+          {
+            "_uid": "c69096c7-65b5-4f44-9117-150efcb2aa64",
+            "name": "Insights",
+            "value": "Insights"
+          },
+          {
+            "_uid": "6fe39775-7982-4eda-9022-854e8e9b0493",
+            "value": "Expert opinion",
+            "name": "Expert opinion"
+          },
+          {
+            "_uid": "39ab3fba-5c8c-4151-a8fa-a204e0f3cca1",
+            "value": "Product updates",
+            "name": "Product updates"
+          }
+        ],
+        "exclude_empty_option": false,
+        "id": "u6DPtinbS123Etw3R89rwA",
+        "required": true,
+        "source": "internal_stories",
+        "filter_content_type": [
+          "caterogy_item"
+        ],
+        "entry_appearance": "card"
+      },
+      "publish_date": {
+        "type": "datetime",
+        "pos": 2,
+        "required": true,
+        "disable_time": false,
+        "id": "O5yH6oPxRO-cNQtwdbv6wg"
+      },
+      "image": {
+        "type": "asset",
+        "pos": 3,
+        "required": true,
+        "filetypes": [
+          "images"
+        ],
+        "id": "R5RI0G-jR_-zGuyz7YnCPA"
+      },
+      "excerpt": {
+        "type": "richtext",
+        "pos": 4,
+        "required": true,
+        "id": "O84HJ7WfSG-gI3wcok5Gog"
+      },
+      "body": {
+        "type": "richtext",
+        "pos": 5,
+        "description": "Optional field for future enhancements",
+        "id": "ajh9P6CYQr2B6Po2404C_A"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": true,
+    "preview_tmpl": null,
+    "is_nestable": false,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "blog_item",
+    "component_group_uuid": "88f48b3d-df9b-4e58-b60f-249a8ecda964",
+    "color": "var(--sb-color-accent-background-gainsboro)",
+    "icon": "",
+    "internal_tags_list": [
+      {
+        "id": 119756032290632,
+        "name": "blog"
+      }
+    ],
+    "internal_tag_ids": [
+      "119756032290632"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
+    "name": "blog_section",
+    "display_name": null,
+    "description": "Blog section",
+    "created_at": "2025-12-05T09:35:47.652Z",
+    "updated_at": "2025-12-05T09:40:22.977Z",
+    "id": 119757814389104,
+    "schema": {
+      "heading": {
+        "type": "richtext",
+        "pos": 0,
+        "required": true,
+        "id": "MDLTzbdoSFSclyYVzkRs2w"
+      },
+      "cta_label": {
+        "type": "text",
+        "pos": 1,
+        "id": "mSqWVc4bQs2Sh5Z5OjDW8w",
+        "required": true
+      },
+      "cta_link": {
+        "type": "multilink",
+        "pos": 2,
+        "allow_target_blank": true,
+        "required": true,
+        "id": "-zUvnAoiQyuvSgBYSOjOww"
+      },
+      "blog_items": {
+        "type": "options",
+        "pos": 3,
+        "source": "internal_stories",
+        "folder_slug": "",
+        "filter_content_type": [
+          "blog_item"
+        ],
+        "entry_appearance": "card",
+        "min_options": "1",
+        "max_options": "5",
+        "id": "EZaHpEqzQESltf7HKMKNQA"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": false,
+    "preview_tmpl": null,
+    "is_nestable": true,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "blog_section",
+    "component_group_uuid": "88f48b3d-df9b-4e58-b60f-249a8ecda964",
+    "color": null,
+    "icon": null,
+    "internal_tags_list": [
+      {
+        "id": 119756032290632,
+        "name": "blog"
+      }
+    ],
+    "internal_tag_ids": [
+      "119756032290632"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "carousel",
     "display_name": null,
     "description": "",
@@ -41,7 +201,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "carousel",
-    "component_group_uuid": null,
+    "component_group_uuid": "a28dd3a5-e9e8-4c8b-b0ab-6b3b2f54eba6",
     "color": "var(--sb-color-accent-background-lumber)",
     "icon": null,
     "internal_tags_list": [
@@ -66,7 +226,7 @@
     "display_name": null,
     "description": "",
     "created_at": "2025-12-03T09:43:45.307Z",
-    "updated_at": "2025-12-03T10:13:44.896Z",
+    "updated_at": "2025-12-03T12:04:42.468Z",
     "id": 119051982070100,
     "schema": {
       "quote": {
@@ -146,17 +306,22 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "carousel_item",
-    "component_group_uuid": null,
+    "component_group_uuid": "a28dd3a5-e9e8-4c8b-b0ab-6b3b2f54eba6",
     "color": "var(--sb-color-accent-background-lumber)",
     "icon": null,
     "internal_tags_list": [
       {
         "id": 119051383180996,
         "name": "carousel"
+      },
+      {
+        "id": 119074461331153,
+        "name": "nextjs-ready"
       }
     ],
     "internal_tag_ids": [
-      "119051383180996"
+      "119051383180996",
+      "119074461331153"
     ],
     "content_type_asset_preview": null,
     "metadata": {}
@@ -204,7 +369,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "carousel_section",
-    "component_group_uuid": null,
+    "component_group_uuid": "a28dd3a5-e9e8-4c8b-b0ab-6b3b2f54eba6",
     "color": "var(--sb-color-accent-background-water)",
     "icon": null,
     "internal_tags_list": [
@@ -225,11 +390,49 @@
     "metadata": {}
   },
   {
+    "name": "caterogy_item",
+    "display_name": null,
+    "description": "",
+    "created_at": "2025-12-05T09:49:20.533Z",
+    "updated_at": "2025-12-05T09:51:13.015Z",
+    "id": 119761143949703,
+    "schema": {
+      "name": {
+        "type": "text",
+        "pos": 0,
+        "required": true,
+        "id": "aK7H5OY3Qou_tPHGVdGw2w"
+      }
+    },
+    "image": null,
+    "preview_field": null,
+    "is_root": true,
+    "preview_tmpl": null,
+    "is_nestable": false,
+    "all_presets": [],
+    "preset_id": null,
+    "real_name": "caterogy_item",
+    "component_group_uuid": "adc129ca-5f53-41b4-a249-89ebfc48cfb3",
+    "color": null,
+    "icon": null,
+    "internal_tags_list": [
+      {
+        "id": 119761139068746,
+        "name": "category"
+      }
+    ],
+    "internal_tag_ids": [
+      "119761139068746"
+    ],
+    "content_type_asset_preview": null,
+    "metadata": {}
+  },
+  {
     "name": "home_page",
     "display_name": "Home Page",
     "description": "Home page layout",
     "created_at": "2025-12-01T13:23:13.981Z",
-    "updated_at": "2025-12-03T11:15:40.721Z",
+    "updated_at": "2025-12-05T09:51:56.714Z",
     "id": 118398132157934,
     "schema": {
       "body": {
@@ -239,7 +442,8 @@
         "restrict_components": true,
         "component_whitelist": [
           "text_cards_section",
-          "carousel_section"
+          "carousel_section",
+          "blog_section"
         ]
       }
     },
@@ -251,7 +455,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "Home Page",
-    "component_group_uuid": null,
+    "component_group_uuid": "d618f2de-0da4-4289-9fb8-8ad5e9133886",
     "color": "var(--sb-color-accent-background-lavender)",
     "icon": null,
     "internal_tags_list": [
@@ -300,7 +504,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "text_block",
-    "component_group_uuid": null,
+    "component_group_uuid": "c983d19e-d3db-42e6-ad44-e2d51c0d27c1",
     "color": "var(--sb-color-accent-background-pale-lavender)",
     "icon": null,
     "internal_tags_list": [
@@ -358,7 +562,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "text_card",
-    "component_group_uuid": null,
+    "component_group_uuid": "c983d19e-d3db-42e6-ad44-e2d51c0d27c1",
     "color": "var(--sb-color-accent-background-pale-lavender)",
     "icon": null,
     "internal_tags_list": [
@@ -409,7 +613,7 @@
     "all_presets": [],
     "preset_id": null,
     "real_name": "text_cards_section",
-    "component_group_uuid": null,
+    "component_group_uuid": "c983d19e-d3db-42e6-ad44-e2d51c0d27c1",
     "color": "var(--sb-color-accent-background-water)",
     "icon": null,
     "internal_tags_list": [

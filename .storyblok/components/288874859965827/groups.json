@@ -1,0 +1,37 @@
+[
+  {
+    "name": "Blog",
+    "id": 119751692340521,
+    "uuid": "88f48b3d-df9b-4e58-b60f-249a8ecda964",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Carousel",
+    "id": 119760143150384,
+    "uuid": "a28dd3a5-e9e8-4c8b-b0ab-6b3b2f54eba6",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Categories",
+    "id": 119761048964402,
+    "uuid": "adc129ca-5f53-41b4-a249-89ebfc48cfb3",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Pages",
+    "id": 119760056356143,
+    "uuid": "d618f2de-0da4-4289-9fb8-8ad5e9133886",
+    "parent_id": null,
+    "parent_uuid": null
+  },
+  {
+    "name": "Shared",
+    "id": 119760417893681,
+    "uuid": "c983d19e-d3db-42e6-ad44-e2d51c0d27c1",
+    "parent_id": null,
+    "parent_uuid": null
+  }
+]

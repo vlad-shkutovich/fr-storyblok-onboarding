@@ -9,6 +9,7 @@ export default async function Page({ params }: PageProps<'/[[...slug]]'>) {
   const storyblokApi = setupStoryblokApi()
   const { data } = await storyblokApi.get(`cdn/stories/${fullSlug}`, {
     version: 'draft',
+    resolve_relations: ['blog_section.blog_items', 'blog_item.category'].join(','),
   })
 
   return <StoryblokStory story={data.story} />

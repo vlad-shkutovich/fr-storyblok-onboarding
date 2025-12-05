@@ -1,5 +1,15 @@
 [
   {
+    "name": "blog",
+    "id": 119756032290632,
+    "object_type": "component"
+  },
+  {
+    "name": "category",
+    "id": 119761139068746,
+    "object_type": "component"
+  },
+  {
     "name": "shared",
     "id": 119050314518211,
     "object_type": "component"
