@@ -56,4 +56,5 @@
   ![Blog Storyblok](./readme_images/image-8.jpg)
 - Read helpful links from Denis and Pavel;
 - Install and configure Context7 in Cursor;
-- _Explore fr-xweather code;_
+- Explore fr-xweather code;
+- Explore fr-xweather Storyblok;
