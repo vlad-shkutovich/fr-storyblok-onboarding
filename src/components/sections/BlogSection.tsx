@@ -16,7 +16,7 @@ export default function BlogSection({ blok }: BlogSectionProps) {
       {...storyblokEditable(blok as SbBlokData)}
     >
       <div className="flex w-full max-w-330 flex-col justify-between gap-10">
-        <div className="flex w-full items-center justify-between">
+        <div className="flex w-full flex-col items-start justify-between gap-4 md:flex-row md:items-center">
           {render(blok.heading)}
 
           <Button className="w-full md:w-auto">
@@ -25,7 +25,7 @@ export default function BlogSection({ blok }: BlogSectionProps) {
           </Button>
         </div>
 
-        <div className="grid grid-cols-4 gap-4 *:first:col-span-2 *:first:row-span-2">
+        <div className="grid grid-cols-1 gap-4 md:grid-cols-2 md:*:first:col-span-2 lg:grid-cols-4 lg:*:first:col-span-2 lg:*:first:row-span-2">
           {blok.blog_items?.map((item) => {
             if (typeof item === 'string') return null
 

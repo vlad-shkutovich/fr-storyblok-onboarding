@@ -18,15 +18,17 @@ function formatDate(dateString: string): string {
 
 export default function BlogItemBlock({ blok }: BlogItemProps) {
   return (
-    <div {...storyblokEditable(blok as SbBlokData)} className="group">
-      <div className="flex min-h-77 flex-col rounded-lg">
-        <Image
-          src={blok.image?.filename ?? ''}
-          alt={blok.image?.alt ?? ''}
-          width={500}
-          height={500}
-          className="rounded-lg"
-        />
+    <div {...storyblokEditable(blok as SbBlokData)} className="group h-full">
+      <div className="flex h-full flex-col rounded-lg">
+        <div className="relative aspect-39/22 overflow-hidden rounded-lg group-first:aspect-27/16">
+          <Image
+            src={blok.image?.filename ?? ''}
+            alt={blok.image?.alt ?? ''}
+            width={648}
+            height={384}
+            className="h-full w-full object-cover"
+          />
+        </div>
         <div className="flex flex-col">
           <div className="flex items-center justify-between">
             {typeof blok.category !== 'string' && (
@@ -34,10 +36,10 @@ export default function BlogItemBlock({ blok }: BlogItemProps) {
             )}
             <p className="text-secondary-foreground text-sm">{formatDate(blok.publish_date)}</p>
           </div>
-          <h3 className="text-2xl leading-8 font-light group-[:not(:first-child)]:text-base group-[:not(:first-child)]:leading-5">
+          <h3 className="text-base leading-5 font-light md:group-first:text-xl md:group-first:leading-7 lg:group-first:text-2xl lg:group-first:leading-8">
             {blok.title}
           </h3>
-          <span className="text-secondary-foreground text-sm group-[:not(:first-child)]:hidden">
+          <span className="text-secondary-foreground hidden text-sm md:group-first:block">
             {render(blok.excerpt)}
           </span>
         </div>
