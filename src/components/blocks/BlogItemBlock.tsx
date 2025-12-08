@@ -1,3 +1,4 @@
+import { formatDate } from '@/lib/utils'
 import type { BlogItemType } from '@/types/types.storyblok.generated'
 import { type SbBlokData, storyblokEditable, StoryblokServerComponent } from '@storyblok/react/rsc'
 import Image from 'next/image'
@@ -5,15 +6,6 @@ import { render } from 'storyblok-rich-text-react-renderer'
 
 interface BlogItemProps {
   blok: BlogItemType
-}
-
-function formatDate(dateString: string): string {
-  const date = new Date(dateString)
-  return date.toLocaleDateString('en-US', {
-    month: 'long',
-    day: 'numeric',
-    year: 'numeric',
-  })
 }
 
 export default function BlogItemBlock({ blok }: BlogItemProps) {
