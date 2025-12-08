@@ -54,6 +54,6 @@
 - Working with Next.js for **Insights & reports section** (focus on rich text and correct content-type stories render);
   ![Blog desktop](./readme_images/image-7.jpg)
   ![Blog Storyblok](./readme_images/image-8.jpg)
-- _Read helpful links from Denis and Pavel;_
+- Read helpful links from Denis and Pavel;
+- Install and configure Context7 in Cursor;
 - _Explore fr-xweather code;_
-- _Explore xWeather's Claude.md as if it were written for me;_
