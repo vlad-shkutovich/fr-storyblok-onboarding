@@ -1,31 +1,31 @@
-import {
-  renderRichText,
-  type SbBlokData,
-  storyblokEditable,
-  StoryblokServerComponent,
-  type StoryblokRichTextNode,
-} from '@storyblok/react/rsc'
+import { storyblokEditable, StoryblokServerComponent, type SbBlokData } from '@storyblok/react/rsc'
+import { render } from 'storyblok-rich-text-react-renderer'
 
+import { Button } from '@/components/ui/Button'
 import type { BlogSectionType } from '@/types/types.storyblok.generated'
+import { ArrowRight } from 'lucide-react'
 
 interface BlogSectionProps {
   blok: BlogSectionType
 }
 
-// TODO: Fix this component
 export default function BlogSection({ blok }: BlogSectionProps) {
   return (
     <section
       className="flex flex-col px-4 py-6 md:items-center md:p-8 xl:px-15 xl:py-12"
       {...storyblokEditable(blok as SbBlokData)}
     >
-      <div className="flex w-full max-w-330 flex-col justify-between gap-10 2xl:flex-row">
-        {renderRichText(blok.heading as StoryblokRichTextNode)}
+      <div className="flex w-full max-w-330 flex-col justify-between gap-10">
+        <div className="flex w-full items-center justify-between">
+          {render(blok.heading)}
 
-        <p>{blok.cta_label}</p>
-        <p>{blok.cta_link.url}</p>
+          <Button className="w-full md:w-auto">
+            {blok.cta_label}
+            <ArrowRight />
+          </Button>
+        </div>
 
-        <div className="flex flex-col gap-6 md:flex-row md:justify-between lg:gap-8 2xl:flex-col 2xl:justify-start">
+        <div className="grid grid-cols-4 gap-4 *:first:col-span-2 *:first:row-span-2">
           {blok.blog_items?.map((item) => {
             if (typeof item === 'string') return null
 

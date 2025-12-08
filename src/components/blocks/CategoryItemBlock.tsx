@@ -5,10 +5,12 @@ interface CategoryItemProps {
   blok: CaterogyItemType
 }
 
-// TODO: Fix this component
 export default function CategoryItemBlock({ blok }: CategoryItemProps) {
   return (
-    <p className="text-secondary px-2 py-1 text-xs" {...storyblokEditable(blok as SbBlokData)}>
+    <p
+      className="text-secondary-foreground w-max rounded-xl border border-solid px-4 py-2 text-xs"
+      {...storyblokEditable(blok as SbBlokData)}
+    >
       {blok.name}
     </p>
   )
